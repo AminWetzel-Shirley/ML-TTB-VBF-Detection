@@ -1,0 +1,3 @@
+SET DIMENSIONS OF INPUT IMAGE
+number_of_x_pixels: 70
+number_of_y_pixels: 70

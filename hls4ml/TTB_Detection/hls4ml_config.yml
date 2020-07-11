@@ -1,0 +1,20 @@
+KerasJson: TTB_Detection_architecture.json
+KerasH5:   TTB_Detection_weights.h5
+#InputData: keras/KERAS_3layer_input_features.dat
+#OutputPredictions: keras/KERAS_3layer_predictions.dat
+OutputDir: TTB_DVE
+ProjectName: TTB_DVE
+XilinxPart: xcvu9p-flgb2104-2-e
+ClockPeriod: 10
+
+IOType: io_parallel # options: io_serial/io_parallel
+HLSConfig:
+  Model:
+    Precision: ap_fixed<16,6>
+    ReuseFactor: 20
+    Strategy: Resource
+  LayerType:
+    Dense:
+      ReuseFactor: 50
+      Strategy: Resource
+#      Compression: True
