@@ -1,0 +1,18 @@
+A slimmed down version of final MSci project code for ML creation and adaptation for FPGAs and hls4ml fix. Contains examples for TTB and VBF detection using single neutrino as background.
+
+
+
+
+
+
+Test Train Data Creation: Formatting of train and test data.
+
+TF Model Creation: Contains TensorFlow code to build TTB and VBF detecting models.
+
+HLS4ML: Contains TTB detector and VBF detector networks in form compatible for hls4ml conversion. Also contains hls4ml v0.2.0 fix with instructions.
+
+Vivado HLS: Contains TTB detector and VBF detector networks as Vivado HLS projects post hls4ml conversion.
+
+Analysis: Example code for producing ROC curves.
+
+top.bit: Final bit file for TTB detector compatible with Serenity KU15p.
